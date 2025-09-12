@@ -1007,7 +1007,7 @@ local aj,ak,al,am,an,ao,ap,aq,ar=setclipboard or toclipboard,request or http_req
 local as,at="",0;
 
 
-local au="https://api.platoboost.com";
+local au="https://api.platoboost.app";
 local av=ak{
 Url=au.."/public/connectivity",
 Method="GET"
@@ -1364,34 +1364,38 @@ Copy=CopyLink
 end
 
 
-return aa end function a.h()
-return{
-platoboost={
-Name="Platoboost",
-Icon="rbxassetid://75920162824531",
-Args={"ServiceId","Secret"},
+return aa end 
 
+function a.h()
+    return {
+        platoboost_1 = {
+            Name = "Platoboost",
+            Icon = "rbxassetid://75920162824531",
+            Args = {"ServiceId", "Secret"},
+            New = a.load "e".New
+        },
+        platoboost_2 = {
+            Name = "Platoboost",
+            Icon = "rbxassetid://75920162824531",
+            Args = {"ServiceId", "Secret"},
+            New = a.load "a".New
+        },
+        pandadevelopment = {
+            Name = "Panda Development",
+            Icon = "panda",
+            Args = {"ServiceId"},
+            New = a.load "f".New
+        },
+        luarmor = {
+            Name = "Luarmor",
+            Icon = "rbxassetid://130918283130165",
+            Args = {"ScriptId", "Discord"},
+            New = a.load "g".New
+        }
+    }
+end
 
-New=a.load'e'.New
-},
-pandadevelopment={
-Name="Panda Development",
-Icon="panda",
-Args={"ServiceId"},
-
-
-New=a.load'f'.New
-},
-luarmor={
-Name="Luarmor",
-Icon="rbxassetid://130918283130165",
-Args={"ScriptId","Discord"},
-
-
-New=a.load'g'.New
-},
-
-}end function a.i()
+function a.i()
 
 
 return[[{
