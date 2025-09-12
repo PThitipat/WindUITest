@@ -1351,41 +1351,40 @@ end
 
 
 return aa end function a.h()
-return{
-platoboost_1={
-Name="Platoboost_1",
-Icon="rbxassetid://87452680074197",
-Args={"ServiceId","Secret"},
-
-
-New=a.load'e'.New
-},
-platoboost_2={
-Name="Platoboost_2",
-Icon="rbxassetid://75920162824531",
-Args={"ServiceId","Secret"},
-
-
-New=a.load'e'.New
-},
-pandadevelopment={
-Name="Panda Development",
-Icon="panda",
-Args={"ServiceId"},
-
-
-New=a.load'f'.New
-},
-luarmor={
-Name="Luarmor",
-Icon="rbxassetid://130918283130165",
-Args={"ScriptId","Discord"},
-
-
-New=a.load'g'.New
-},
-
-}end function a.i()
+    return {
+        platoboost_1 = {
+            Name = "Platoboost_1",
+            Icon = "rbxassetid://87452680074197",
+            Args = {"ServiceId","Secret"},
+            -- ใช้ฟังก์ชันใหม่ เรียก a.load'e'.New ทุกครั้ง
+            New = function(...) 
+                return a.load'e'.New(...)
+            end
+        },
+        platoboost_2 = {
+            Name = "Platoboost_2",
+            Icon = "rbxassetid://75920162824531",
+            Args = {"ServiceId","Secret"},
+            -- ใช้ฟังก์ชันใหม่เหมือนกัน
+            New = function(...) 
+                return a.load'e'.New(...)
+            end
+        },
+        pandadevelopment = {
+            Name = "Panda Development",
+            Icon = "panda",
+            Args = {"ServiceId"},
+            New = a.load'f'.New
+        },
+        luarmor = {
+            Name = "Luarmor",
+            Icon = "rbxassetid://130918283130165",
+            Args = {"ScriptId","Discord"},
+            New = a.load'g'.New
+        },
+    }
+end
+ function a.i()
 
 
 return[[{
