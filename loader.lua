@@ -1626,7 +1626,7 @@ end
 
 return aa end function a.h()
 return{
-platoboost1={
+platoboost_1={
 Name="Platoboost",
 Icon="rbxassetid://75920162824531",
 Args={"ServiceId","Secret"},
@@ -1634,7 +1634,7 @@ Args={"ServiceId","Secret"},
 
 New=a.load'e'.New
 },
-platoboost2={
+platoboost_2={
 Name="Platoboost",
 Icon="rbxassetid://87452680074197",
 Args={"ServiceId","Secret"},
