@@ -1007,13 +1007,13 @@ local aj,ak,al,am,an,ao,ap,aq,ar=setclipboard or toclipboard,request or http_req
 local as,at="",0;
 
 
-local au="https://api.platoboost.app";
+local au="https://api.platoboost.com";
 local av=ak{
 Url=au.."/public/connectivity",
 Method="GET"
 };
 if av.StatusCode~=200 or av.StatusCode~=429 then
-au="https://api.platoboost.app";
+au="https://api.platoboost.net";
 end
 
 
@@ -1366,18 +1366,10 @@ end
 
 return aa end function a.h()
 return{
-platoboost_1={
-Name="Platoboost_1",
-Icon="rbxassetid://87452680074197",
-Args={"ServiceId1","Secret1"},
-
-
-New=a.load'e'.New
-},
-platoboost_2={
-Name="Platoboost_2",
+platoboost={
+Name="Platoboost",
 Icon="rbxassetid://75920162824531",
-Args={"ServiceId2","Secret2"},
+Args={"ServiceId","Secret"},
 
 
 New=a.load'e'.New
