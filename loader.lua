@@ -1368,7 +1368,7 @@ return aa end function a.h()
 return{
 platoboost_1={
 Name="Platoboost_1",
-Icon="rbxassetid://75920162824531",
+Icon="rbxassetid://87452680074197",
 Args={"ServiceId","Secret"},
 
 
