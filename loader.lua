@@ -1369,7 +1369,7 @@ return{
 platoboost_1={
 Name="Platoboost_1",
 Icon="rbxassetid://87452680074197",
-Args={"ServiceId","Secret"},
+Args={"ServiceId1","Secret1"},
 
 
 New=a.load'e'.New
@@ -1377,7 +1377,7 @@ New=a.load'e'.New
 platoboost_2={
 Name="Platoboost_2",
 Icon="rbxassetid://75920162824531",
-Args={"ServiceId","Secret"},
+Args={"ServiceId2","Secret2"},
 
 
 New=a.load'e'.New
