@@ -981,7 +981,6 @@ local ae=ac;
 local af=ad;
 local ag=true;
 
-
 local ah=function(ah)end;
 
 
@@ -1002,20 +1001,17 @@ if av.StatusCode~=200 or av.StatusCode~=429 then
 au="https://api.platoboost.app";
 end
 
-
 function cacheLink()
 if at+(600)<ao()then
 local aw=ak{
-Url=au.."/public/start",
-Method="POST",
-Body=X{
-service=ae,
-identifier=_(ar())
-},
-Headers={
-["Content-Type"]="application/json"
+    Url=au.."/public/start",
+    Method="POST",
+    Body=X{
+        service = ae,
+        identifier = _(ar())
+    },
+    Headers={["Content-Type"]="application/json"}
 }
-};
 
 if aw.StatusCode==200 then
 local ax=Y(aw.Body);
@@ -1363,7 +1359,7 @@ return aa end function a.h()
         },
         platoboost_2 = {
             Name = "Platoboost_2",
-            Icon = "rbxassetid://75920162824531",
+            Icon = "rbxassetid://87452680074197",
             Args = {"ServiceId","Secret"},
             -- ใช้ฟังก์ชันใหม่เหมือนกัน
             New = function(...) 
