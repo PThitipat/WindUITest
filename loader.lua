@@ -982,8 +982,8 @@ local ab={}
 
 function ab.New(ac,ad)
 
-local ae=6580;
-local af='2ea0a848-1a0d-41f0-9a50-83ceb06451ec';
+local ae=ac;
+local af=ad;
 local ag=true;
 
 
@@ -1251,8 +1251,8 @@ local ab={}
 
 function ab.New(ac,ad)
 
-local ae=4435;
-local af='b5e1a57b-a318-4751-ad6c-3b3163f460ea';
+local ae=ac;
+local af=ad;
 local ag=true;
 
 
@@ -1626,12 +1626,14 @@ return aa end function a.h()
 return{
 platoboost_1 = { -- คีย์ตรงกับ Type ใน API
 Name = "Platoboost",
-Icon = "rbxassetid://75920162824531",
+Icon = "rbxassetid://87452680074197",
+Args = {4435, 'b5e1a57b-a318-4751-ad6c-3b3163f460ea'},
 New = a.load'e'.New
 },
 platoboost_2 = { -- คีย์ตรงกับ Type ใน API
 Name = "Platoboost",
-Icon = "rbxassetid://75920162824531",
+Icon = "rbxassetid://87452680074197",
+Args = {6580, '2ea0a848-1a0d-41f0-9a50-83ceb06451ec'},
 New = a.load'eXZ'.New
 },
 pandadevelopment={
@@ -2426,11 +2428,17 @@ PaddingBottom=UDim.new(0,10),
 })
 
 for e,g in next,ag.KeySystem.API do
-local h=ag.WindUI.Services[g.Type]
-if h then
-local i={}
-for j,l in next,h.Args do
-table.insert(i,g[l])
+    local h=ag.WindUI.Services[g.Type]
+    if h then
+        local i={}
+        for j,l in next,h.Args do
+            -- เปลี่ยนบรรทัดนี้
+            -- จาก: table.insert(i,g[l])
+            -- เป็น:
+            table.insert(i,l)
+        end
+        -- โค้ดที่เหลือต่อจากนี้จะใช้ตาราง i เพื่อสร้าง key
+    end
 end
 
 local m=h.New(table.unpack(i))
