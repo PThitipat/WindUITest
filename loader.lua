@@ -2428,17 +2428,11 @@ PaddingBottom=UDim.new(0,10),
 })
 
 for e,g in next,ag.KeySystem.API do
-    local h=ag.WindUI.Services[g.Type]
-    if h then
-        local i={}
-        for j,l in next,h.Args do
-            -- เปลี่ยนบรรทัดนี้
-            -- จาก: table.insert(i,g[l])
-            -- เป็น:
-            table.insert(i,l)
-        end
-        -- โค้ดที่เหลือต่อจากนี้จะใช้ตาราง i เพื่อสร้าง key
-    end
+local h=ag.WindUI.Services[g.Type]
+if h then
+local i={}
+for j,l in next,h.Args do
+table.insert(i,l)
 end
 
 local m=h.New(table.unpack(i))
