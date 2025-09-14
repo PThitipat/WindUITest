@@ -1624,21 +1624,17 @@ end
 
 return aa end function a.h()
 return{
-platoboost_1={
-Name="Platoboost",
-Icon="rbxassetid://87452680074197",
-Args={4435, 'b5e1a57b-a318-4751-ad6c-3b3163f460ea'},
-
-
-New=a.load'e'.New
+platoboost_1 = { -- คีย์ตรงกับ Type ใน API
+Name = "Platoboost",
+Icon = "rbxassetid://87452680074197",
+Args = {4435, 'b5e1a57b-a318-4751-ad6c-3b3163f460ea'},
+New = a.load'e'.New
 },
-platoboosxt_2={
-Name="Platoboost",
-Icon="rbxassetid://75920162824531",
-Args={6580, '2ea0a848-1a0d-41f0-9a50-83ceb06451ec'},
-
-
-New=a.load'eXZ'.New
+platoboost_2 = { -- คีย์ตรงกับ Type ใน API
+Name = "Platoboost",
+Icon = "rbxassetid://87452680074197",
+Args = {6580, '2ea0a848-1a0d-41f0-9a50-83ceb06451ec'},
+New = a.load'eXZ'.New
 },
 pandadevelopment={
 Name="Panda Development",
