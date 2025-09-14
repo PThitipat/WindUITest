@@ -1246,8 +1246,6 @@ local X,Y,_=B,W,Z;
 
 
 
-
-
 local ab={}
 
 
@@ -1634,10 +1632,10 @@ Args={"ServiceId","Secret"},
 
 New=a.load'e'.New
 },
-platoboost_2={
+platoboosxt_2={
 Name="Platoboost",
 Icon="rbxassetid://87452680074197",
-Args={"ServiceId","Secret"},
+Args={"Serv","Sec"},
 
 
 New=a.load'eXZ'.New
