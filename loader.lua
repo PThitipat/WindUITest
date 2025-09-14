@@ -2432,7 +2432,7 @@ local h=ag.WindUI.Services[g.Type]
 if h then
 local i={}
 for j,l in next,h.Args do
-table.insert(i,l)
+table.insert(i,g[l])
 end
 
 local m=h.New(table.unpack(i))
